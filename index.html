@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:200">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Which website has more traffic?</h1>
+
+<!-- Can I do this without the table? Maybe look up grids? -->
+
+<table align=center>
+  <tr>
+    <td><p id="option_1">TK Option 1</p></td>
+    <td><p id="option_2">TK Option 2</p></td>
+  </tr>
+</table>
+
+<!-- Can I do this *without* a refresh button? That would be cooler... and more addictive. The next version is already onscreen once you've done the first version. Maybe using a javascript popup to give the answer to the last question and then it disappears and the next question is already on screen :) -->
+
+<p class="buttons">
+<button id="refresh_button" class="pure-button">Refresh</button>
+
+<p class="about"><br />
+	by <a href="http://www.uribram.com">Uri Bram</a><br />
+	<br />
+	<!-- TK remove this once you find a way to scrape directly from Alexa data, instead of copying data by hand -->
+	Website data from <a href="http://www.alexa.com/">Alexa.com</a>, correct as of May 2015<br />
+</p>
+
+<!-- TK change github link if you change project name -->
+
+<p class="footer"> May 2015. MIT Licensed on <a href="https://github.com/marbiru/which">Github</a>.</p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html> 
