@@ -1,14 +1,14 @@
 var buzzfeed_array = [
 	"Buzzfeed",
-	20,
+	103,
+];
+
+var new_york_times_array = [
+	"New York Times",
+	102,
 ];
 
 var websites_array = [
 	buzzfeed_array,
-	"New York Times",
-];
-
-var dummy_array = [
-	"DummyWebsite",
-	20,
+	new_york_times_array,
 ];
