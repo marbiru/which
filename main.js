@@ -35,3 +35,9 @@ right_website_name.innerHTML = right_website[0];
 left_website_rank.innerHTML = left_website[1];
 
 right_website_rank.innerHTML = right_website[1];
+
+// Reload page on button click
+
+$('#refresh_button').click(function() {
+    location.reload();
+});
