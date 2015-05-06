@@ -10,9 +10,15 @@ var vice_array = [
 	214,
 ]
 
+var huffington_post_array = [
+	"Huffington Post",
+	102,
+];
+
 var new_media_array = [
 	buzzfeed_array,
 	vice_array,
+	huffington_post_array,
 ]
 
 // maybe define a "random element" function to save time
@@ -31,9 +37,15 @@ var guardian_array = [
 	153,
 ];
 
+var bbc_array = [
+	"The BBC",
+	70,
+];
+
 var old_media_array = [
 	new_york_times_array,
 	guardian_array,
+	bbc_array,
 ]
 
 var old_media = old_media_array[Math.floor(Math.random() * old_media_array.length)];
