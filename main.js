@@ -53,9 +53,3 @@ function print_answer(){
     });
 
   });
-
-// Reload page on button click
-
-$('#refresh_button').click(function() {
-    location.reload();
-});
