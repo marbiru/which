@@ -35,21 +35,25 @@ function print_answer(){
 	right_website_rank.innerHTML = "No. " + right_website[1] + " biggest website in the world.";
 }
 
-  $(function() {
+$(function() {
     $( "#answer" ).dialog({
       autoOpen: false,
       show: {
-        effect: "blind",
-        duration: 1000
+        effect: "puff",
+        duration: 500
       },
       hide: {
-        effect: "explode",
-        duration: 1000
+        effect: "scale",
+        duration: 500
       }
     });
  
     $( "#left_hand_side, #right_hand_side" ).click(function() {
       $( "#answer" ).dialog( "open" );
     });
+});
 
-  });
+$( "#answer" ).on( "dialogclose", function() {
+	left_hand_side.innerHTML = left_website[0];
+	right_hand_side.innerHTML = right_website[0];
+});
