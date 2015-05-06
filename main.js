@@ -35,6 +35,24 @@ function print_answer(){
 	right_website_rank.innerHTML = "No. " + right_website[1] + " biggest website in the world.";
 }
 
+  $(function() {
+    $( "#dialog" ).dialog({
+      autoOpen: false,
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+ 
+    $( "#opener" ).click(function() {
+      $( "#dialog" ).dialog( "open" );
+    });
+  });
+ 
 // Reload page on button click
 
 $('#refresh_button').click(function() {
