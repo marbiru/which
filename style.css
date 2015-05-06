@@ -20,11 +20,11 @@ p {
 }
 
 #left_hand_side {
-padding-right: 50px;
+min-width: 300px;
 }
 
 #right_hand_side {
-padding-left: 50px;
+min-width: 300px;
 }
 
 .highlight {

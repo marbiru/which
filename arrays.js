@@ -29,7 +29,7 @@ var new_media = new_media_array[Math.floor(Math.random() * new_media_array.lengt
 
 var new_york_times_array = [
 	"New York Times",
-	102,
+	101,
 ];
 
 var guardian_array = [
