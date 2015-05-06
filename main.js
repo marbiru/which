@@ -36,7 +36,7 @@ function print_answer(){
 }
 
   $(function() {
-    $( "#dialog" ).dialog({
+    $( "#answer" ).dialog({
       autoOpen: false,
       show: {
         effect: "blind",
@@ -48,11 +48,12 @@ function print_answer(){
       }
     });
  
-    $( "#opener" ).click(function() {
-      $( "#dialog" ).dialog( "open" );
+    $( "#left_hand_side, #right_hand_side" ).click(function() {
+      $( "#answer" ).dialog( "open" );
     });
+
   });
- 
+
 // Reload page on button click
 
 $('#refresh_button').click(function() {
