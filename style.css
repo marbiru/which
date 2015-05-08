@@ -27,6 +27,13 @@ min-width: 300px;
 min-width: 300px;
 }
 
+#answer{
+  color: #21043C;
+  font-size: 30px;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
 .highlight {
   background-color:#FFFFB5;
 }
@@ -68,3 +75,8 @@ min-width: 300px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
+/* Background pattern from subtlepatterns.com */
+
+body {
+    background-image: url("confectionary.png");
+}

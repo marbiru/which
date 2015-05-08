@@ -44,7 +44,7 @@ function print_answer(){
 	answer_evaluation.innerHTML = answer_eval_text;
 	left_website_name.innerHTML = left_website[0] + " is ranked";
 	right_website_name.innerHTML = right_website[0] + " is ranked";
-	left_website_rank.innerHTML = "No. " + left_website[1] + " in the world";
+	left_website_rank.innerHTML = "No. " + left_website[1] + " in the world.";
 	right_website_rank.innerHTML = "No. " + right_website[1] + " in the world.";
 }
 
