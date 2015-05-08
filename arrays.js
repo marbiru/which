@@ -44,6 +44,33 @@ var old_media_array = [
 	bbc_array,
 ];
 
+
+// u.s. site
+
+var linked_in_array = [
+	"LinkedIn",
+	"13",
+];
+
+var instagram_array = [
+	"Instagram",
+	"33",
+];
+
+// non-u.s. site
+
+var vk_array = [
+	"Vkontakte",
+	"32",
+];
+
+var weibo_array = [
+	"Weibo",
+	"15",
+];
+
+// randomiser function
+
 function select_random(array){
   return array[Math.floor(Math.random() * array.length)];
 };
