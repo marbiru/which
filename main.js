@@ -1,3 +1,5 @@
+var scroll_counter = 0
+
 $(function(){
   $( "#left_hand_side, #right_hand_side" ).text(print_options());
   $( "#answer" ).on( "dialogclose", function() {
@@ -6,13 +8,14 @@ $(function(){
 });
 
 function print_options(){
-  current_pair = select_random(ultimate_array);
+  current_pair = ultimate_array[scroll_counter];
   left_array = current_pair[0];
   left_website = select_random(left_array);
   left_hand_side.innerHTML = left_website[0];
   right_array = current_pair[1];
   right_website = select_random(right_array);
   right_hand_side.innerHTML = right_website[0];
+  scroll_counter = (scroll_counter + 1) % ultimate_array.length;
 };
 
 $('#left_hand_side').click(function(){
