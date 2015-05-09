@@ -45,11 +45,11 @@ function print_answer(){
 	answer_output.innerHTML = 
   answer_eval_text + 
   "<br /> <br />" +
-  "<i>" + selected_website[0] + "</i> ranks <br />" +
-  "<u> No. " + selected_website[1] + "</u> <br />" +
+  "<i>" + selected_website[0] + "</i> is ranked <br />" +
+  "<u> No." + selected_website[1] + "</u> <br />" +
   "in the world." +
   "<br /> <br />" +
-  "<i>" + rejected_website[0] + "</i> ranks <br />" +
+  "<i>" + rejected_website[0] + "</i> is ranked <br />" +
 	"<u> No. " + rejected_website[1] + "</u> <br />" +
   "in the world.";
 }

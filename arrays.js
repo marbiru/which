@@ -57,17 +57,6 @@ var instagram_array = [
 	"33",
 ];
 
-var ebay_array = [
-	"Ebay",
-	"18",
-];
-
-var us_sites_array = [
-	linked_in_array,
-	instagram_array,
-	ebay_array,
-];
-
 // non-u.s. site
 
 var vk_array = [
@@ -78,17 +67,6 @@ var vk_array = [
 var weibo_array = [
 	"Weibo",
 	"15",
-];
-
-var taobao_array = [
-	"Taobao",
-	"8",
-];
-
-var non_us_sites_array = [
-	vk_array,
-	weibo_array,
-	taobao_array,
 ];
 
 // googles
@@ -121,20 +99,6 @@ var google_france = [
 var google_brazil = [
 	"Google Brazil",
 	"34",
-];
-
-// this could be done better, so that on every turn the programme picks two completely random google_countries to match against each other.
-
-var europe_googles_array = [
-	google_germany,
-	google_uk,
-	google_france,
-];
-
-var non_europe_googles_array = [
-	google_india,
-	google_japan,
-	google_brazil,
 ];
 
 // randomiser function
