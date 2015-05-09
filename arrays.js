@@ -137,6 +137,14 @@ var non_europe_googles_array = [
 	google_brazil,
 ];
 
+// Ultimate Array
+
+var ultimate_array = [
+	[new_media_array, old_media_array],
+	[us_sites_array, non_us_sites_array],
+	[europe_googles_array, non_europe_googles_array],
+];
+
 // randomiser function
 
 function select_random(array){

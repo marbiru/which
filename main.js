@@ -8,14 +8,13 @@ $(function(){
 });
 
 function print_left_hand_side(){
-  var new_media = select_random(new_media_array);
-  left_website = new_media;
+  current_pair = select_random(ultimate_array);
+  left_website = current_pair[0][0];
   left_hand_side.innerHTML = left_website[0];
 };
 
 function print_right_hand_side(){
-  var old_media = select_random(old_media_array);
-  right_website = old_media;
+  right_website = current_pair[1][0];
   right_hand_side.innerHTML = right_website[0];
 };
 
