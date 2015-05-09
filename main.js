@@ -32,13 +32,11 @@ $('#right_hand_side').click(function(){
 
 function print_answer(){
 	if (selected_website[1] < rejected_website[1]) {
-		var correct_array = ["That's right!", "You're right!", "Spot on!", "You got it!"]
-    // replace with select_random
-		var answer_eval_text = select_random(correct_array);
+		var correct_array = ["That's right!", "You're right!", "Spot on!", "You got it!"];
+		var answer_eval_text = select_pseudo_random(correct_array);
 	} else {
-		var wrong_array = ["Wrong!", "Not quite!", "'fraid not",]
-    // replace with select_random
-		var answer_eval_text = select_random(wrong_array);
+		var wrong_array = ["Wrong!", "Not quite!", "'fraid not",];
+		var answer_eval_text = select_pseudo_random(wrong_array);
 	};
 
 	answer_output.innerHTML = 

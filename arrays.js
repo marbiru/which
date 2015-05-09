@@ -196,3 +196,5 @@ function select_pseudo_random(array){
  	array.push(selected_element);
  	return selected_element;
 };
+
+// technically this pseudorandom generator has a problem in our ussage because on-page-load the last item in each array is never selected. This doesn't seem important, though. 
