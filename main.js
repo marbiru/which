@@ -10,10 +10,10 @@ $(function(){
 function print_options(){
   current_pair = ultimate_array[scroll_counter];
   left_array = current_pair[0];
-  left_website = select_random(left_array);
+  left_website = select_pseudo_random(left_array);
   left_hand_side.innerHTML = left_website[0];
   right_array = current_pair[1];
-  right_website = select_random(right_array);
+  right_website = select_pseudo_random(right_array);
   right_hand_side.innerHTML = right_website[0];
   scroll_counter = (scroll_counter + 1) % ultimate_array.length;
 };
@@ -34,11 +34,11 @@ function print_answer(){
 	if (selected_website[1] < rejected_website[1]) {
 		var correct_array = ["That's right!", "You're right!", "Spot on!", "You got it!"]
     // replace with select_random
-		var answer_eval_text = correct_array[Math.floor(Math.random()*correct_array.length)];
+		var answer_eval_text = select_random(correct_array);
 	} else {
 		var wrong_array = ["Wrong!", "Not quite!", "'fraid not",]
     // replace with select_random
-		var answer_eval_text = wrong_array[Math.floor(Math.random()*wrong_array.length)];
+		var answer_eval_text = select_random(wrong_array);
 	};
 
 	answer_output.innerHTML = 

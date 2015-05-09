@@ -137,7 +137,7 @@ var non_europe_googles_array = [
 	google_brazil,
 ];
 
-// Ultimate Array
+// All the arrays together, in matched pairs
 
 var ultimate_array = [
 	[new_media_array, old_media_array],
@@ -145,8 +145,18 @@ var ultimate_array = [
 	[europe_googles_array, non_europe_googles_array],
 ];
 
-// randomiser function
+// pick a random element from array
 
 function select_random(array){
   return array[Math.floor(Math.random() * array.length)];
+};
+
+
+// pick a pseudorandom element from 
+function select_pseudo_random(array){
+	random_index = Math.floor(Math.random() * (array.length - 1));
+ 	selected_element = array[random_index];
+ 	array.splice(random_index, 1);
+ 	array.push(selected_element);
+ 	return selected_element;
 };

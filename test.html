@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:200">
+   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- this is a test for the pseudorandomiser -->
+
+<p id="test">TEST</p>
+
+<div align="center"><p id="test_button" class="button-red pure-button" >TEST BUTTON</p></div>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script>
+
+function select_pseudo_random(array){
+	random_index = Math.floor(Math.random() * (array.length - 1));
+ 	selected_element = array[random_index];
+ 	array.splice(random_index, 1);
+ 	array.push(selected_element);
+ 	return selected_element;
+};
+
+
+test_array = [
+	"truth",
+	"beauty",
+	"patience",
+	"bluth",
+];
+
+$(function(){
+  $( "#test_button" ).click(function() {
+    $( "#test" ).text(print_output());    
+  });
+});
+
+function print_output() {
+	test.innerHTML = select_pseudo_random(test_array);
+}
+
+
+</script>
+
+</body>
+</html> 
