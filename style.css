@@ -29,7 +29,8 @@ min-width: 300px;
 
 #answer{
   color: #21043C;
-  font-size: 30px;
+  font-size: 24px;
+  font-weight: lighter;
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
 }

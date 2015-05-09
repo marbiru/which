@@ -41,11 +41,17 @@ function print_answer(){
     // replace with select_random
 		var answer_eval_text = wrong_array[Math.floor(Math.random()*wrong_array.length)];
 	};
-	answer_evaluation.innerHTML = answer_eval_text;
-	selected_website_name.innerHTML = selected_website[0] + " is ranked";
-  selected_website_rank.innerHTML = "No. " + selected_website[1] + " in the world.";
-	rejected_website_name.innerHTML = rejected_website[0] + " is ranked";
-	rejected_website_rank.innerHTML = "No. " + rejected_website[1] + " in the world.";
+
+	answer_output.innerHTML = 
+  answer_eval_text + 
+  "<br /> <br />" +
+  "<i>" + selected_website[0] + "</i> is ranked <br />" +
+  "<u> No." + selected_website[1] + "</u> <br />" +
+  "in the world." +
+  "<br /> <br />" +
+  "<i>" + rejected_website[0] + "</i> is ranked <br />" +
+	"<u> No. " + rejected_website[1] + "</u> <br />" +
+  "in the world.";
 }
 
 $(function() {
