@@ -20,19 +20,19 @@ function print_right_hand_side(){
 };
 
 $('#left_hand_side').click(function(){
-    window.selected_site = left_website;
-    window.rejected_site = right_website;
+    window.selected_website = left_website;
+    window.rejected_website = right_website;
     $("#answer_evaluation").text(print_answer());
 });	
 
 $('#right_hand_side').click(function(){
-    window.selected_site = right_website;
-    window.rejected_site = left_website;
+    window.selected_website = right_website;
+    window.rejected_website = left_website;
     $("#answer_evaluation").text(print_answer());
 });
 
 function print_answer(){
-	if (selected_site[1] < rejected_site[1]) {
+	if (selected_website[1] < rejected_website[1]) {
 		var correct_array = ["That's right!", "You're right!", "Spot on!", "You got it!"]
     // replace with select_random
 		var answer_eval_text = correct_array[Math.floor(Math.random()*correct_array.length)];
@@ -42,10 +42,10 @@ function print_answer(){
 		var answer_eval_text = wrong_array[Math.floor(Math.random()*wrong_array.length)];
 	};
 	answer_evaluation.innerHTML = answer_eval_text;
-	left_website_name.innerHTML = left_website[0] + " is ranked";
-	right_website_name.innerHTML = right_website[0] + " is ranked";
-	left_website_rank.innerHTML = "No. " + left_website[1] + " in the world.";
-	right_website_rank.innerHTML = "No. " + right_website[1] + " in the world.";
+	selected_website_name.innerHTML = selected_website[0] + " is ranked";
+  selected_website_rank.innerHTML = "No. " + selected_website[1] + " in the world.";
+	rejected_website_name.innerHTML = rejected_website[0] + " is ranked";
+	rejected_website_rank.innerHTML = "No. " + rejected_website[1] + " in the world.";
 }
 
 $(function() {
