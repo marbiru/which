@@ -7,7 +7,7 @@ var buzzfeed_array = [
 
 var vice_array = [
 	"Vice",
-	214,
+	215,
 ]
 
 var huffington_post_array = [
@@ -15,10 +15,16 @@ var huffington_post_array = [
 	102,
 ];
 
+var diply_array = [
+	"Diply",
+	62,
+];
+
 var new_media_array = [
 	buzzfeed_array,
 	vice_array,
 	huffington_post_array,
+	diply_array,
 ]
 
 // old media
@@ -38,10 +44,16 @@ var bbc_array = [
 	70,
 ];
 
+var fox_news_array = [
+	"Fox News",
+	214,
+]
+
 var old_media_array = [
 	new_york_times_array,
 	guardian_array,
 	bbc_array,
+	fox_news_array,
 ];
 
 
@@ -49,78 +61,100 @@ var old_media_array = [
 
 var linked_in_array = [
 	"LinkedIn",
-	"13",
+	13,
 ];
 
 var instagram_array = [
 	"Instagram",
-	"33",
+	33,
 ];
 
 var ebay_array = [
 	"Ebay",
-	"18",
+	18,
+];
+
+var yahoo_array = [
+	"Yahoo",
+	4,
 ];
 
 var us_sites_array = [
 	linked_in_array,
 	instagram_array,
 	ebay_array,
+	yahoo_array,
 ];
 
 // non-u.s. site
 
 var vk_array = [
 	"Vkontakte",
-	"32",
+	32,
 ];
 
 var weibo_array = [
 	"Weibo",
-	"15",
+	15,
 ];
 
 var taobao_array = [
 	"Taobao",
-	"8",
+	8,
+];
+
+var baidu_array = [
+	"Baidu",
+	5,
 ];
 
 var non_us_sites_array = [
 	vk_array,
 	weibo_array,
 	taobao_array,
+	baidu_array,
 ];
 
 // googles
 
 var google_india = [
 	"Google India",
-	"11",
+	11,
 ];
 
 var google_japan = [
 	"Google Japan",
-	"19",
+	19,
 ];
 
 var google_germany = [
 	"Google Germany",
-	"22",
+	21,
 ];
 
 var google_uk = [
 	"Google UK",
-	"28",
+	26,
 ];
 
 var google_france = [
 	"Google France",
-	"30",
+	34,
+];
+
+var google_poland = [
+	"Google Poland",
+	82,
+];
+
+var google_turkey = [
+	"Google Turkey",
+	71,
 ];
 
 var google_brazil = [
 	"Google Brazil",
-	"34",
+	31,
 ];
 
 // this could be done better, so that on every turn the programme picks two completely random google_countries to match against each other.
@@ -129,12 +163,14 @@ var europe_googles_array = [
 	google_germany,
 	google_uk,
 	google_france,
+	google_poland,
 ];
 
 var non_europe_googles_array = [
 	google_india,
 	google_japan,
 	google_brazil,
+	google_turkey,
 ];
 
 // All the arrays together, in matched pairs
