@@ -30,10 +30,15 @@ $('#right_hand_side').click(function(){
     $("#answer_evaluation").text(print_answer());
 });
 
+score = 0;
+score_output.innerHTML = score;
+
 function print_answer(){
 	if (selected_website[1] < rejected_website[1]) {
 		var correct_array = ["That's right!", "You're right!", "Spot on!", "You got it!"];
 		var answer_eval_text = select_pseudo_random(correct_array);
+    score += 1;
+    score_output.innerHTML = score;
 	} else {
 		var wrong_array = ["Wrong!", "Not quite!", "'fraid not",];
 		var answer_eval_text = select_pseudo_random(wrong_array);
